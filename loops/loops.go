@@ -7,8 +7,14 @@ func main() {
 	bar()
 }
 func foo() {
-	for i := 0; i <= 100; i++ {
-		fmt.Println(i)
+	//for i := 0; i <= 100; i++ {
+	//	fmt.Println(i)
+	//}
+	for i := 0; ; i++ {
+		fmt.Println(i, i)
+		if i == 11 {
+			return
+		}
 	}
 }
 
